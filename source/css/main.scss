@@ -20,6 +20,10 @@
  * @media screen and (min-width: $screen-lg-min) {}
 */
 
+p {
+  margin: 0;
+}
+
 .pre {
   white-space: pre-wrap;
 }
@@ -100,8 +104,6 @@
     background-image: image_url('cover-company.jpg');
   }
 }
-
-
 
 .contact {
   color: black;
