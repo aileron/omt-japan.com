@@ -126,3 +126,11 @@ p {
   margin: 0;
   padding: 10px 0;
 }
+
+.read {
+  font-size: 18px;
+
+  &.mini {
+    font-size: 14px;
+  }
+}
