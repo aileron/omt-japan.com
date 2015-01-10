@@ -2,6 +2,7 @@ source "https://rubygems.org"
 
 # Core
 gem "middleman", "3.3.7"
+gem "middleman-deploy"
 
 # Assets
 gem "bootstrap-sass", "~> 3.3.1.0", require: false

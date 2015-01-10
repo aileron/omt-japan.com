@@ -182,4 +182,14 @@ configure :build do
       { icon: "mstile-144x144", format: "png" },
     ]
   }
+
+  activate :asset_host, :host => "/smartuniverse.com"
+end
+
+# デプロイの設定
+# 今回は gh-pages を使用するので branch に 'gh-pages' を設定する
+activate :deploy do |deploy|
+  deploy.build_before = true
+  deploy.method = :git
+  deploy.branch = 'gh-pages'
 end
