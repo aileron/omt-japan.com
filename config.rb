@@ -10,7 +10,7 @@ require "./source/environment_variables.rb"
 # ========================================================================
 # Site settings
 # ========================================================================
-set :site_title,            "omt-japan"
+set :site_title,            "OMT JAPAN"
 set :site_description,      "This is an example meta description."
 set :site_url_production,   ENV['site_url_production']
 set :site_url_development,  ENV['site_url_development']

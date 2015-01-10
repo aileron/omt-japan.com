@@ -20,7 +20,32 @@
  * @media screen and (min-width: $screen-lg-min) {}
 */
 
+.pre {
+  white-space: pre-wrap;
+}
+
+.text-left {
+  text-align:left;
+}
+.text-right {
+  text-align:right;
+}
+
+.max-height-panel {
+  height: 650px;
+  min-height: 650px;
+  display: table-cell;
+  vertical-align: middle;
+
+  .cover-photo {
+    margin-top: -20px;
+  }
+}
+
 .cover-photo {
+  -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+          box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+
   position: absolute;
   top: 0;
   left: 0;
@@ -31,7 +56,7 @@
   z-index: -1;
 
   .vision & { 
-    background-image: image_url('cover-vision.png');
+    background-image: image_url('cover-vision.png') !important;
   }
 
   .index & {
@@ -45,4 +70,45 @@
   .company & {
     background-image: image_url('cover-company.jpg');
   }
+}
+
+.cover-photos {
+  -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+          box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+
+  .vision,.philosophy {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+  }
+
+  .vision { 
+    background-image: image_url('cover-vision.png');
+  }
+
+  .philosophy {
+    background-image: image_url('cover-philosophy.png');
+  }
+}
+
+
+
+.contact {
+  color: black;
+}
+
+.news {
+  color: black;
+}
+
+.recruit {
+  color: black;
 }

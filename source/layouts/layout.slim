@@ -30,11 +30,11 @@ html.no-js
     .cover-container
       .masthead.clearfix
         .inner
-          h3.masthead-brand #{site_title}
+          a(href="/")
+            h3.masthead-brand #{site_title}
           nav
             ul.nav.masthead-nav
-              =nav_li "Top", '/'
-              - for name in %w(News Philosophy Vision Company Recruit Contact) do
+              - for name in %w(News Philosophy Company Recruit Contact) do
                 =nav_li "#{name}", "#{name.underscore}"
 
       .inner.cover
