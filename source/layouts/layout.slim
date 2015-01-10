@@ -22,18 +22,26 @@ html.no-js
     link href="#{site_url+current_page.url}" rel="canonical"
     == stylesheet_link_tag "main"
 
-  body class="#{page_classes}"
-    /[if lte IE 8]
-      p.chromeframe.alert.alert-warning
-        | You are using an outdated browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
-    #wrap
-      header role="banner"
-        == _partial "navigation"
-      main role="document"
-        .container
-          == yield
-      footer.content-info role="content-info"
-        hr
-        .container
+  body class="#{page_classes}" data-spy="scroll" data-target="#primary-navigation"
+
+
+.site-wrapper
+  .site-wrapper-inner
+    .cover-container
+      .masthead.clearfix
+        .inner
+          h3.masthead-brand #{site_title}
+          nav
+            ul.nav.masthead-nav
+              =nav_li "Top", '/'
+              - for name in %w(News Philosophy Vision Company Recruit Contact) do
+                =nav_li "#{name}", "/#{name.underscore}/"
+
+      .inner.cover
+        == yield
+      .mastfoot
+        .inner
           p &copy; #{Time.now.year} #{site_title}
+
+
     == javascript_include_tag "base.js", "bootstrap-includes.js", "main.js"

@@ -9,6 +9,7 @@
 @import "_mixins";                // Custom mixins
 @import "_globals";               // Global elements
 @import "_bootstrap-includes";    // Bootstrap core
+@import "_cover";
 
 
 /* ==========================================================================
@@ -18,3 +19,30 @@
  * @media screen and (min-width: $screen-md-min) {}
  * @media screen and (min-width: $screen-lg-min) {}
 */
+
+.cover-photo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+
+  .vision & { 
+    background-image: image_url('cover-vision.png');
+  }
+
+  .index & {
+    background-image: image_url('cover-top.png');
+  }
+
+  .philosophy & {
+    background-image: image_url('cover-philosophy.png');
+  }
+
+  .company & {
+    background-image: image_url('cover-company.jpg');
+  }
+}

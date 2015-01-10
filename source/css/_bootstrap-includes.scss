@@ -2,6 +2,8 @@
 @import "bootstrap/variables";
 @import "bootstrap/mixins";
 
+
+
 // Reset and dependencies
 @import "bootstrap/normalize";
 @import "bootstrap/print";
@@ -48,3 +50,7 @@
 // Utility classes
 @import "bootstrap/utilities";
 @import "bootstrap/responsive-utilities";
+
+// bootswatch
+@import 'bootswatch';
+@import 'bootswatch_variables';

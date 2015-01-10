@@ -10,7 +10,7 @@ require "./source/environment_variables.rb"
 # ========================================================================
 # Site settings
 # ========================================================================
-set :site_title,            "Middleman Site"
+set :site_title,            "omt-japan"
 set :site_description,      "This is an example meta description."
 set :site_url_production,   ENV['site_url_production']
 set :site_url_development,  ENV['site_url_development']
@@ -20,7 +20,6 @@ set :images_dir,            'img'
 set :fonts_dir,             'fonts'
 
 # Sitemap URLs (use trailing slashes)
-set :url_sample,            "/sample/"
 # Place additional URLs here...
 
 # Sitemap XML
