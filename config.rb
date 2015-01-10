@@ -132,6 +132,7 @@ end
 # Build-specific configuration
 # ========================================================================
 configure :build do
+  # activate :asset_host, :host => "http://aileron.github.io/smartuniverse.com/"
   set :site_url, "#{site_url_production}"
   set :sass, line_comments: false, style: :nested
   
@@ -185,7 +186,6 @@ configure :build do
   }
 =end
 
-  activate :asset_host, :host => "/smartuniverse.com"
 end
 
 # デプロイの設定
