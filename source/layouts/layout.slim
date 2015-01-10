@@ -35,7 +35,7 @@ html.no-js
             ul.nav.masthead-nav
               =nav_li "Top", '/'
               - for name in %w(News Philosophy Vision Company Recruit Contact) do
-                =nav_li "#{name}", "/#{name.underscore}/"
+                =nav_li "#{name}", "#{name.underscore}"
 
       .inner.cover
         == yield

@@ -111,7 +111,7 @@ helpers do
       li_classes = "nav-item-#{label_formatted}"
     end
 
-    if current_page.url == url
+    if current_page.url[1..-2] == url or current_page.url == url
       li_classes += " active"
     end
 
