@@ -83,7 +83,7 @@
   width: 100%;
   z-index: -1;
 
-  .vision,.philosophy {
+  div {
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
@@ -96,6 +96,10 @@
 
   .philosophy {
     background-image: image_url('cover-philosophy.png');
+  }
+
+  .company {
+    background-image: image_url('cover-company.jpg');
   }
 }
 
