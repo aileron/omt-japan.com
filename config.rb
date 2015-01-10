@@ -160,6 +160,7 @@ configure :build do
   
   # Create favicon and device-specific icons
   # Edit favicon_template.png for custom icon
+=begin
   activate :favicon_maker, :icons => {
     "favicon_template.png" => [
       { icon: "apple-touch-icon-152x152-precomposed.png" },
@@ -182,6 +183,7 @@ configure :build do
       { icon: "mstile-144x144", format: "png" },
     ]
   }
+=end
 
   activate :asset_host, :host => "/smartuniverse.com"
 end
