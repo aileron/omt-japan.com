@@ -143,3 +143,16 @@ p {
 .company .mastfoot {
   display: none;
 }
+
+.ceo {
+  background-image: image_url('ceo.jpg');
+  width: 200px;
+  height: 200px;
+  background-position-x: 50%;
+  border-radius: 100px;
+  border: 5px solid #777;
+
+  @media (max-width: 992px) {
+    display: none;
+  }
+}
