@@ -85,26 +85,29 @@ p {
   width: 100%;
   z-index: -1;
 
-  div {
+  > div {
     background-size: contain;
 
+    &.center{  background-position: center center }
     &.cover { background-size: cover;  }
+    &.border-dashed { border-top:1px dashed #666 }
 
+    position: relative;
     background-repeat: no-repeat;
     height: 100%;
     width: 100%;
-  }
 
-  .vision { 
-    background-image: image_url('cover-vision.png');
-  }
+    &.vision { 
+      background-image: image_url('cover-vision.png');
+    }
 
-  .philosophy {
-    background-image: image_url('cover-philosophy.png');
-  }
+    &.philosophy {
+      background-image: image_url('cover-philosophy.png');
+    }
 
-  .company {
-    background-image: image_url('cover-company.jpg');
+    &.company {
+      background-image: image_url('cover-company.jpg');
+    }
   }
 }
 
@@ -140,9 +143,11 @@ p {
   }
 }
 
-.company .mastfoot {
-  display: none;
+.mastfoot {
+  .company    &{ display: none }
+  .philosophy &{ display: none }
 }
+
 
 .ceo {
   background-image: image_url('ceo.jpg');
@@ -155,4 +160,78 @@ p {
   @media (max-width: 992px) {
     display: none;
   }
+}
+
+article {
+  &.philosophy {
+    @media (max-width: 768px) {
+      position: absolute;
+      top: 100px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      width: 272px;
+    }
+
+    @media (min-width: 768px) {
+      left: 100px;
+      position: absolute;
+      top: 100px;
+      margin: 0 auto;
+      width: 272px;   
+    }
+
+    @media (min-width: 992px) {
+      left: -400px;
+      position: absolute;
+      top: 100px;
+      right: 0;
+      margin: 0 auto;
+      width: 272px;
+    }
+  }
+
+  &.vision {
+    @media (max-width: 768px) {
+      position: absolute;
+      top: 100px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      width: 272px;
+    }
+
+    @media (min-width: 768px) {
+      position: absolute;
+      margin: 0 auto;
+      width: 272px;
+      bottom: 140px;
+      left: 0;
+      right: -300px;
+    }
+
+    @media (min-width: 992px) {
+      position: absolute;
+      margin: 0 auto;
+      width: 272px;
+      bottom: 140px;
+      left: 0;
+      right: -500px;
+    }
+  }
+}
+
+.table {
+  display: table;
+  height: 100%;
+}
+
+.vertical-middle {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0 20px;
+}
+
+body.contact .cover {
+  padding: 0;
 }
