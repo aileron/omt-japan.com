@@ -57,6 +57,11 @@ p {
   width: 100%;
   z-index: -1;
 
+  &.fixed-center {
+    position: fixed;
+    background-position: center center;
+  }
+
   .index & {
     background-image: image_url('cover-top.jpg');
   }
