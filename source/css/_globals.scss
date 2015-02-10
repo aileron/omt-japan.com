@@ -10,15 +10,6 @@
   height: 0;
 }
 
-::selection {
-  color: white;
-  background: green;
-}
-
-::-moz-selection {
-  color: white;
-  background: green;
-}
 
 .alignleft, .alignright {
   margin-bottom: 1em;
