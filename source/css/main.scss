@@ -71,7 +71,7 @@ p {
   }
 
   .index & {
-    background-image: image_url('cover-top.jpg');
+    background-image: image_url('cover-top.png');
   }
 
   .recruit & {
@@ -108,7 +108,7 @@ p {
     }
 
     &.philosophy {
-      background-image: image_url('cover-philosophy.jpg');
+      background-image: image_url('cover-philosophy.png');
     }
 
     &.company {
