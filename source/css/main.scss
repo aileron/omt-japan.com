@@ -171,17 +171,17 @@ article {
     }
 
     @media (min-width: 768px) {
-      left: 100px;
+      top: 50px;
+      left: 50px;
       position: absolute;
-      top: 100px;
       margin: 0 auto;
-      width: 272px;   
+      width: 272px;
     }
 
     @media (min-width: 992px) {
-      left: -400px;
+      top: 80px;
+      left: -520px;
       position: absolute;
-      top: 100px;
       right: 0;
       margin: 0 auto;
       width: 272px;
