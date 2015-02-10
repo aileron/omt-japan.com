@@ -57,21 +57,14 @@ p {
   width: 100%;
   z-index: -1;
 
-  .vision & { 
-    background-image: image_url('cover-vision.png') !important;
-  }
-
   .index & {
-    background-image: image_url('cover-top.png');
+    background-image: image_url('cover-top.jpg');
   }
 
-  .philosophy & {
-    background-image: image_url('cover-philosophy.png');
+  .recruit & {
+    background-image: image_url('cover-recruit.jpg');
   }
 
-  .company & {
-    background-image: image_url('cover-company.jpg');
-  }
 }
 
 .cover-photos {
@@ -102,7 +95,7 @@ p {
     }
 
     &.philosophy {
-      background-image: image_url('cover-philosophy.png');
+      background-image: image_url('cover-philosophy.jpg');
     }
 
     &.company {
@@ -120,7 +113,6 @@ p {
 }
 
 .recruit {
-  color: black;
 }
 
 .cover-bottom {
