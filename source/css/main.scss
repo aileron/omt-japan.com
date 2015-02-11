@@ -65,6 +65,14 @@ body.index h1 {
     font-size:54px;
   }
 }
+body.company h1 span {
+  @media (max-width: 768px) {
+    &.block {display: block}
+    &.ml,&.mr {letter-spacing: -4px;display: inline-block;}
+    &.ml {margin-left: -15px}
+    &.mr {margin-right: -20px}
+  }
+}
 
 .cover-photo {
   border: none;
