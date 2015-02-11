@@ -58,9 +58,12 @@ p {
 }
 
 body.index h1 {
-    @media (min-width: 768px) {
-      font-size:54px;
-    }
+  margin: 100px -20px;
+
+  @media (min-width: 768px) {
+    margin: 0;
+    font-size:54px;
+  }
 }
 
 .cover-photo {
