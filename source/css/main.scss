@@ -175,6 +175,14 @@ body.company h1 span {
   .philosophy &{ display: none }
 }
 
+.ceo-message article {
+  padding: 0 20px;
+  padding-right: 220px;
+  @media (max-width: 992px) {
+    padding-right: 0;
+    padding: 0 20px;
+  }
+}
 
 .ceo {
   background-image: image_url('ceo.jpg');
@@ -183,6 +191,7 @@ body.company h1 span {
   background-position-x: 50%;
   border-radius: 100px;
   border: 5px solid #777;
+  margin-right: -220px;
 
   @media (max-width: 992px) {
     display: none;
