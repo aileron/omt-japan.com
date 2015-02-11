@@ -41,6 +41,9 @@ p {
 .text-left {
   text-align:left;
 }
+.text-center {
+  text-align:center;
+}
 .text-right {
   text-align:right;
 }
@@ -52,6 +55,12 @@ p {
   .cover-photo {
     margin-top: -20px;
   }
+}
+
+body.index h1 {
+    @media (min-width: 768px) {
+      font-size:54px;
+    }
 }
 
 .cover-photo {
@@ -175,7 +184,7 @@ article {
       left: 0;
       right: 0;
       margin: 0 auto;
-      width: 272px;
+      width: 268px;
     }
 
     @media (min-width: 768px) {
@@ -183,7 +192,7 @@ article {
       left: 50px;
       position: absolute;
       margin: 0 auto;
-      width: 272px;
+      width: 268px;
     }
 
     @media (min-width: 992px) {
@@ -192,7 +201,7 @@ article {
       position: absolute;
       right: 0;
       margin: 0 auto;
-      width: 272px;
+      width: 268px;
     }
 
     @media (min-width: 992px) {
@@ -201,7 +210,7 @@ article {
       position: absolute;
       right: auto;
       margin: 0 auto;
-      width: 272px;
+      width: 268px;
     }
   }
 
@@ -212,13 +221,13 @@ article {
       left: 0;
       right: 0;
       margin: 0 auto;
-      width: 272px;
+      width: 268px;
     }
 
     @media (min-width: 768px) {
       position: absolute;
       margin: 0 auto;
-      width: 272px;
+      width: 268px;
       bottom: 140px;
       left: 0;
       right: -300px;
@@ -227,7 +236,7 @@ article {
     @media (min-width: 992px) {
       position: absolute;
       margin: 0 auto;
-      width: 272px;
+      width: 268px;
       bottom: 140px;
       left: auto;
       // right: -500px;
